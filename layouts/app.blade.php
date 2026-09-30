@@ -38,10 +38,23 @@
                             <i class="bi bi-people me-1"></i> Member
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-warning fw-bold" href="/sesi/logout">
-                            <i class="bi bi-box-arrow-right me-1"></i> Logout
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark fw-bold" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle me-1"></i> Profil Saya
                         </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userDropdown">
+                            <li>
+                                <a class="dropdown-item" href="/profil">
+                                    <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i> Biodata
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item text-danger" href="/sesi/logout">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-danger"></i> Logout
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
