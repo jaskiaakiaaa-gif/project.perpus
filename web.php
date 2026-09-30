@@ -19,6 +19,7 @@ Route::get('/sesi',[SessionController::class,'index']);
 Route::post('/sesi/login',[SessionController::class,'login']);
 Route::get('/sesi/login',[SessionController::class,'logout']);
 Route::get('/sesi/logout', [SessionController::class, 'logout']);
+Route::get('/profil', [SessionController::class, 'profil'])->middleware('auth');
 
 
 
